@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record model="ir.actions.server" id="print_instance">
+        <field name="name">Res Partner Server Action</field>
+        <field name="model_id" ref="model_whatsapp_auth_session"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = model.get_filtered_record()
+        </field>
+    </record>
+
+</odoo>

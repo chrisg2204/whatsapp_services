@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<!-- Menú raíz -->
+	<menuitem id="main_whatsapp_credential_menu" name="Whatsapp Módulo"/>
+        
+	<menuitem id="whatsapp_credential_menu" name="Inicio" parent="main_whatsapp_credential_menu"/>
+
+	<menuitem id="whatsapp_opts_menu" name="Operaciones" parent="main_whatsapp_credential_menu"/>
+
+	<menuitem id="session_menu" name="Lista de sesiones" parent="whatsapp_credential_menu" action="whatsapp_session_list_action"/>
+
+	<menuitem id="courses_menu" name="Lista de mensajes" parent="whatsapp_credential_menu" action="whatsapp_message_list_action"/>
+
+	<menuitem id="new_session_menu" name="Solicitar nueva sesión" parent="whatsapp_opts_menu" action="print_instance"/>
+
+</odoo>

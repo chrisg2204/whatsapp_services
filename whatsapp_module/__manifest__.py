@@ -10,5 +10,10 @@
     'depends': ['base', 'base_rest_whatsapp'],
     'data': [
         'security/ir.model.access.csv',
+        'views/whatsapp_message.xml',
+        'views/whatsapp_auth_session_view.xml',
+        'views/whatsapp_opts_view.xml',
+        'views/menu_view.xml',
+        'views/res_config_settings_view.xml',
     ]
 }
