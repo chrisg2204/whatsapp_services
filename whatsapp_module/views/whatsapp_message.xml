@@ -34,6 +34,15 @@
                         <label for="num_des" class="oe_edit_only" string="Número destino" />
                         <h1><field name="num_des" /></h1>
                     </div>
+                    <group>
+                        <group>
+                            <field name="file_type" />
+                        </group>
+                        <group>
+                            <field name="attachment_rel_id" />
+                        </group>
+                    </group>
+
                 </sheet>
                  <div class="oe_chatter">
                         <field name="message_follower_ids" widget="mail_followers"/>
